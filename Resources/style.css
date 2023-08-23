@@ -1,0 +1,101 @@
+/* Universal styles */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair', serif;
+}
+  
+html {
+    background-color: ghostwhite;
+    font-size: 16px;
+}
+
+body {
+    max-width: 1200px;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+header {
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    font-style: italic;
+    padding: 1rem;
+    border: 1px solid hsla(31, 100%, 31%, 1);
+    background-image: url(../Images/seamless-white-interlaced-rounded-arc-patterned-background_53876-97975.avif);
+    color: hsla(31, 100%, 31%, 1);
+    margin-top: 20px;
+    line-height: 5rem;
+}
+
+/* Nav section */
+
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    border-bottom: 3px solid hsla(31, 100%, 31%, 1);
+}
+
+nav img {
+    margin-left: 10px;
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    margin-right: 0;
+}
+
+nav li {
+    list-style: none;
+    padding-left: 2rem;
+    font-size: 1.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* About Me section */
+
+
+
+/* Poem section */
+
+
+
+/* Projects section */
+
+
+/* Skills section */
+
+
+/* Contact section */
+
+
+
+/*Responsive design*/
+
+@media only screen and (max-width: 480px) {
+    
+}
+
+
+@media only screen and (max-width: 768px) {
+    
+}
