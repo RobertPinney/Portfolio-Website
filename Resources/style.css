@@ -25,6 +25,15 @@ h1 {
     grid-row-end: 1;
 }
 
+.synopsis {
+    position: relative;
+    bottom: 1290px;
+    left: 100px;
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 1rem;
+}
+
 .h1-line {
     position: relative;
     border: 1px solid hsla(227.32,100%,75.88%,1);
@@ -32,7 +41,8 @@ h1 {
     background-color: hsla(227.32,100%,75.88%,1);
     width: 375px;
     border-radius: 10px;
-    bottom: 1300px;
+    bottom: 1270px;
+    right: 500px;
 
 }
 
@@ -68,7 +78,7 @@ nav li {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: hsla(250.59,50.72%,57.84%,1);
 }
 
 
@@ -78,7 +88,6 @@ nav a {
     width: 50%;
     border-radius: 90%;
     position: relative;
-    right: 30px;
     top: 20px;
     grid-row-start: 1;
     grid-row-end: 1;
@@ -139,10 +148,16 @@ nav a {
     grid-column: 1 / span 2;
     width: 900px;
     position: relative;
-    bottom: 200px;
+    bottom: 240px;
     grid-row-start: 4;
     grid-row-end: 4;
 }
+
+.title {
+    color: hsla(255.54,87.42%,68.82%,1);
+}
+
+
 /* Skills section */
 
 .skill-container {
@@ -158,11 +173,20 @@ nav a {
     grid-row-end: 5;
 }
 
+.html5-icon {
+    background-image: url(./images/icons8-html5-48.png);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
 
 /* Contact section */
- .contact {
+ #contact {
     position: relative;
-    bottom: 200px;
+    bottom: 100px;
  }
 
 
