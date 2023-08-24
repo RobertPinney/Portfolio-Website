@@ -1,12 +1,13 @@
 /* Universal styles */
 
 * {
-    margin: 0 auto;
+    margin: auto;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Playfair', serif;
+    font-family: 'Nunito', sans-serif;
+    // border: 1px red solid;
 }
-  
+
 html {
     background-color: ghostwhite;
     font-size: 16px;
@@ -14,27 +15,32 @@ html {
 
 body {
     max-width: 1200px;
-}
-
-.container {
     width: 90%;
-    margin: auto;
-}
-
-header {
-    width: 100%;
 }
 
 h1 {
-    text-align: center;
-    font-size: 5rem;
-    font-style: italic;
-    padding: 1rem;
-    border: 1px solid hsla(31, 100%, 31%, 1);
-    background-image: url(../Images/seamless-white-interlaced-rounded-arc-patterned-background_53876-97975.avif);
-    color: hsla(31, 100%, 31%, 1);
-    margin-top: 20px;
-    line-height: 5rem;
+    font-size: 4rem;
+    color: hsla(232.89,62.3%,47.84%,1);
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.h1-line {
+    position: relative;
+    border: 1px solid hsla(227.32,100%,75.88%,1);
+    height: 3px;
+    background-color: hsla(227.32,100%,75.88%,1);
+    width: 375px;
+    border-radius: 10px;
+    bottom: 1300px;
+
+}
+
+main {
+    display: grid;
+    width: 1000px;
+    height: 1500px;
+    grid-template: 1fr 3fr 1fr 1fr / 3fr 2fr;
 }
 
 /* Nav section */
@@ -46,12 +52,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 4rem;
-    border-bottom: 3px solid hsla(31, 100%, 31%, 1);
-}
-
-nav img {
-    margin-left: 10px;
-    height: 50px;
+    border-bottom: 3px solid hsla(227.69,100%,30.59%,1);
 }
 
 nav ul {
@@ -71,22 +72,98 @@ nav a {
 }
 
 
-/* About Me section */
+/* Portrait section */
 
+#portrait {
+    width: 50%;
+    border-radius: 90%;
+    position: relative;
+    right: 30px;
+    top: 20px;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+/* About Me section */
+.about-me {
+    width: 90%;
+    grid-row: 2 / 4;
+    position: relative;
+    bottom: 160px;
+}
+
+.about-me-title {
+    color: hsla(334.84,74.16%,59.02%,1)
+}
 
 
 /* Poem section */
+ .poem {
+    width: 90%;
+    margin-top: 40px;
+    text-align: center;
+    grid-row: 2 / 4;
+ }
 
+ .poem-title {
+    font-size: 1.2rem;
+    text-decoration: underline;
+ }
 
+ .poem-author {
+    text-align: right;
+    font-size: 0.7rem;
+ }
+
+ .poem-text {
+    font-family: 'Lora', serif;
+    font-style: italic;
+ }
+
+/* Line */
+
+.line {
+    border: 5px solid hsla(227.32,100%,75.88%,1);
+    height: 10px;
+    background-color: hsla(227.32,100%,75.88%,1);
+    width: 700px;
+    grid-column: 1 / span 2;
+    position: relative;
+    bottom: 700px;
+    border-radius: 10px;
+}
 
 /* Projects section */
 
-
+.project {
+    grid-column: 1 / span 2;
+    width: 900px;
+    position: relative;
+    bottom: 200px;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
 /* Skills section */
+
+.skill-container {
+    display: flex;
+}
+
+.skill {
+    grid-column: 1 / span 2;
+    width: 900px;
+    position: relative;
+    bottom: 200px;
+    grid-row-start: 5;
+    grid-row-end: 5;
+}
 
 
 /* Contact section */
-
+ .contact {
+    position: relative;
+    bottom: 200px;
+ }
 
 
 /*Responsive design*/
