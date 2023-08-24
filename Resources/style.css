@@ -8,14 +8,16 @@
 }
 
 html {
-    background-color: ghostwhite;
     font-size: 16px;
 }
 
 body {
     max-width: 1200px;
     width: 90%;
-    background-image: url(./images/wwang_040522_44.eps);
+    background-image: url(./images/sl_032421_41660_19.jpg);
+    background-color: ghostwhite;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h1 {
@@ -69,7 +71,7 @@ nav ul {
     display: flex;
     margin-right: 0;
 }
-
+/* color value hsla(241, 100%, 72%, 1) from https://fffuel.co/cccolor/ */
 nav li {
     list-style: none;
     padding-left: 2rem;
@@ -95,10 +97,11 @@ nav a {
 
 /* About Me section */
 .about-me {
-    width: 90%;
+    width: 80%;
     grid-row: 2 / 4;
     position: relative;
     bottom: 210px;
+    right: 10px;
 }
 
 .about-me-title {
@@ -138,7 +141,7 @@ nav a {
     width: 700px;
     grid-column: 1 / span 2;
     position: relative;
-    bottom: 700px;
+    bottom: 750px;
     border-radius: 10px;
 }
 
