@@ -98,7 +98,7 @@ nav a {
     width: 90%;
     grid-row: 2 / 4;
     position: relative;
-    bottom: 160px;
+    bottom: 210px;
 }
 
 .about-me-title {
@@ -173,14 +173,51 @@ nav a {
     grid-row-end: 5;
 }
 
-.html5-icon {
-    background-image: url(./images/icons8-html5-48.png);
+.skill ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon {
     background-size: cover;
     height: 50px;
     width: 50px;
     border-radius: 50%;
     display: inline-block;
     vertical-align: middle;
+}
+
+.html5 {
+    background-image: url(./images/icons8-html5-48.png);
+}
+
+.css {
+    background-image: url(./images/icons8-css-48.png);
+}
+
+.javascript {
+    background-image: url(./images/icons8-javascript-48.png);
+}
+
+.nodejs {
+    background-image: url(./images/icons8-node-js-48.png);
+}
+
+.github {
+    background-image: url(./images/icons8-github-50.png);
+}
+
+.word {
+    background-image: url(./images/icons8-word-48.png);
+}
+
+.excel{
+    background-image: url(./images/icons8-excel-48.png);
+}
+
+.powerpoint {
+    background-image: url(./images/icons8-powerpoint-48.png);
 }
 
 /* Contact section */
