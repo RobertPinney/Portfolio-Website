@@ -16,6 +16,7 @@ html {
 body {
     max-width: 1200px;
     width: 90%;
+    background-image: url(./images/wwang_040522_44.eps);
 }
 
 h1 {
@@ -153,6 +154,15 @@ nav a {
     grid-row-end: 4;
 }
 
+.project ul {
+    list-style-type: none;
+    padding-top: 10px;
+}
+
+.project a {
+    text-decoration: none;
+}
+
 .title {
     color: hsla(255.54,87.42%,68.82%,1);
 }
@@ -177,6 +187,7 @@ nav a {
     list-style-type: none;
     display: flex;
     flex-wrap: wrap;
+    padding-top: 10px;
 }
 
 .icon {
