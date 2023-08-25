@@ -13,47 +13,18 @@ html {
 
 body {
     max-width: 1200px;
-    width: 90%;
     background-image: url(./images/sl_032421_41660_19.jpg);
     background-color: ghostwhite;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-h1 {
-    font-size: 4rem;
-    color: hsla(232.89,62.3%,47.84%,1);
-    grid-row-start: 1;
-    grid-row-end: 1;
-}
-
-.synopsis {
-    position: relative;
-    bottom: 1290px;
-    left: 100px;
-    font-family: 'Lora', serif;
-    font-style: italic;
-    font-size: 1rem;
-}
-
-.h1-line {
-    position: relative;
-    border: 1px solid hsla(227.32,100%,75.88%,1);
-    height: 3px;
-    background-color: hsla(227.32,100%,75.88%,1);
-    width: 375px;
-    border-radius: 10px;
-    bottom: 1270px;
-    right: 500px;
-
-}
-
 main {
+    width: 90%;
     display: grid;
-    width: 1000px;
-    height: 1500px;
-    grid-template: 1fr 3fr 1fr 1fr / 3fr 2fr;
+    grid-template: 2fr 5fr / 3fr 2fr;
 }
+
 
 /* Nav section */
 
@@ -84,76 +55,116 @@ nav a {
 }
 
 
+
+/* Intro section */
+
+.intro {
+    position:relative;
+    top: 75px;
+}
+
+.intro h1 {
+    font-size: 4rem;
+    color: hsla(232.89,62.3%,47.84%,1);
+}
+
+.intro aside {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 1rem;
+    text-align: right;
+}
+
+.intro hr {
+    border: 1px solid hsla(227.32,100%,75.88%,1);
+    height: 3px;
+    background-color: hsla(227.32,100%,75.88%,1);
+    border-radius: 10px;
+}
+
+
+
 /* Portrait section */
 
-#portrait {
-    width: 50%;
+.portrait img{
+    width: 150%;
     border-radius: 90%;
     position: relative;
-    top: 20px;
-    grid-row-start: 1;
-    grid-row-end: 1;
+    top: 50px;
+    right: 25px;
 }
+
+
 
 /* About Me section */
 .about-me {
     width: 80%;
-    grid-row: 2 / 4;
+    text-align: center;
+    min-width: 100px;
+    max-width: 600px;
     position: relative;
-    bottom: 210px;
-    right: 10px;
+    bottom: 20px;
+
 }
 
-.about-me-title {
-    color: hsla(334.84,74.16%,59.02%,1)
+.about-me h2 {
+    color: hsla(334.84,74.16%,59.02%,1);
+    margin-bottom: 10px;
+}
+
+.about-me p {
+    min-width: 300px;
 }
 
 
 /* Poem section */
  .poem {
     width: 90%;
-    margin-top: 40px;
     text-align: center;
-    grid-row: 2 / 4;
+    min-width: 300px;
+
  }
 
- .poem-title {
+ .poem h4 {
     font-size: 1.2rem;
     text-decoration: underline;
  }
 
- .poem-author {
+ .poem h5 {
     text-align: right;
     font-size: 0.7rem;
  }
 
- .poem-text {
+ .poem p {
     font-family: 'Lora', serif;
     font-style: italic;
  }
 
+
+
 /* Line */
 
 .line {
+    width: 60%;
+
+}
+
+.line hr{
     border: 5px solid hsla(227.32,100%,75.88%,1);
     height: 10px;
     background-color: hsla(227.32,100%,75.88%,1);
-    width: 700px;
-    grid-column: 1 / span 2;
-    position: relative;
-    bottom: 750px;
+    margin-top: 10px;
     border-radius: 10px;
 }
+
+
 
 /* Projects section */
 
 .project {
-    grid-column: 1 / span 2;
-    width: 900px;
+    width: 90%;
     position: relative;
-    bottom: 340px;
-    grid-row-start: 4;
-    grid-row-end: 4;
+    margin-top: 50px;
 }
 
 .project ul {
@@ -165,24 +176,23 @@ nav a {
     text-decoration: none;
 }
 
-.title {
+.project h2 {
     color: hsla(255.54,87.42%,68.82%,1);
+    display: flex;
 }
+
+.project li {
+    font-size: 20px;
+}
+
 
 
 /* Skills section */
 
-.skill-container {
-    display: flex;
-}
-
 .skill {
-    grid-column: 1 / span 2;
-    width: 900px;
     position: relative;
-    bottom: 50px;
-    grid-row-start: 5;
-    grid-row-end: 5;
+    margin-top: 100px;
+    width: 90%;
 }
 
 .skill ul{
@@ -190,6 +200,10 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     padding-top: 10px;
+}
+
+.skill h2 {
+    color: hsla(255.54,87.42%,68.82%,1);
 }
 
 .icon {
@@ -233,44 +247,104 @@ nav a {
     background-image: url(./images/icons8-powerpoint-48.png);
 }
 
-/* Contact section from contact page */
 
-.contact-main {
-    height: 500px;
+
+/* Footer section */
+
+.footer {
+    margin-top: 30px;
 }
 
-.contact-title {
-    grid-row-start: 2;
-    grid-row-end: 3;
+
+
+/* Contact section from contact page */
+
+.contact {
+    width: 90%;
+    display: grid;
+    grid-template: 1fr 2fr / 3fr 2fr;
+}
+
+.contact h1 {
+    font-size: 4rem;
+    color: hsla(232.89,62.3%,47.84%,1);
+}
+
+.contact aside {
+    font-family: 'Lora', serif;
+    font-style: italic;
+    font-size: 1rem;
+    text-align: right;
+}
+
+.contact hr {
+    border: 1px solid hsla(227.32,100%,75.88%,1);
+    height: 3px;
+    background-color: hsla(227.32,100%,75.88%,1);
+    border-radius: 10px;
+}
+
+.contact img {
+    width: 50%;
+    border-radius: 90%;
+    position: relative;
+    top: 50px;
+}
+
+.contact h2 {
     color: hsla(255.54,87.42%,68.82%,1);
     position: relative;
-    bottom: 100px;
     text-decoration: underline;
 }
 
-.contact-list {
+.contact-details {
     position: relative;
     bottom: 150px;
 }
 
-.contact-list li {
+.contact li {
     padding-top: 20px;
 }
 
-#copyright {
-    position: relative;
-    right: 700px;
-    top: 50px;
-}
-
-
 /*Responsive design*/
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 850px) {
+    main {
+        grid-template: 0.5fr 0.5fr 2fr 1.5fr/ 1fr;
+    }
     
+    .intro h1{
+        font-size: 3rem;
+    }
+    .intro {
+        top: 0px;
+    }
+    .poem {
+
+    }
+    .portrait img {
+        top: 0px;
+        margin-bottom: 20px;
+    }
+    .contact {
+        grid-template: 1fr 1fr 1fr/ 1fr;
+    }
+    .contact h1 {
+        font-size: 3rem;
+    }
+    .contact img {
+        width: 30%;
+        top: 0px
+    }
+    .contact-details {
+        bottom: 0px;
+    }
+
 }
 
-
-@media only screen and (max-width: 768px) {
-    
+@media only screen and (max-width: 650px) {
+    .about-me {
+        bottom: 0px;
+    }
 }
+
