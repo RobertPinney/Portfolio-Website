@@ -1,3 +1,4 @@
+/* color value hsla(241, 100%, 72%, 1) from https://fffuel.co/cccolor/ */
 /* Universal styles */
 
 * {
@@ -42,7 +43,7 @@ nav ul {
     display: flex;
     margin-right: 0;
 }
-/* color value hsla(241, 100%, 72%, 1) from https://fffuel.co/cccolor/ */
+
 nav li {
     list-style: none;
     padding-left: 2rem;
@@ -154,6 +155,7 @@ nav a {
     height: 10px;
     background-color: hsla(227.32,100%,75.88%,1);
     margin-top: 10px;
+    margin-bottom: 50px;
     border-radius: 10px;
 }
 
@@ -163,29 +165,30 @@ nav a {
 
 .project {
     width: 90%;
-    position: relative;
-    margin-top: 50px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.project h2 {
+    color: hsla(255.54,87.42%,68.82%,1);
 }
 
 .project ul {
-    list-style-type: none;
+    list-style-type: circle;
     padding-top: 10px;
+    font-size: 20px;
 }
 
 .project a {
     text-decoration: none;
 }
 
-.project h2 {
-    color: hsla(255.54,87.42%,68.82%,1);
-    display: flex;
+#generated-text {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color: hsla(225.18,100%,33.33%,1);
 }
-
-.project li {
-    font-size: 20px;
-}
-
-
 
 /* Skills section */
 
@@ -247,6 +250,50 @@ nav a {
     background-image: url(./images/icons8-powerpoint-48.png);
 }
 
+/* Back to top button */
+
+#back-to-top-container {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    min-width: 100%;
+    min-height: 100%;
+    align-content: center
+}
+
+#back-to-top {
+    position: relative;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    border: 2px solid hsla(239.57,82.46%,66.47%,1);
+    border-radius: 5px;
+    color: #F8F8F8;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2), 0px -2px 2px rgba(255, 255, 255, 0.5) inset, 0 2px 2px rgba(255, 255, 255, 0.8) inset;
+    text-shadow: 0 -2px hsla(239.57,82.46%,66.47%,1); 
+    transition: 0.5s;
+    background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+}
+
+#back-to-top:hover {
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1), 0px -2px 2px rgba(255, 255, 255, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.4) inset;
+    color: #fff;
+    background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%);
+    border-color: #17326d;
+  }
+  
+  
+#back-to-top:active {
+    margin-top: 2px;
+    margin-bottom: -2px;
+    box-shadow: 0px 2px 2px rgba(63, 63, 63, 0.1), 0px -2px 2px rgba(255, 255, 255, 0.25) inset, 0 2px 2px rgba(255, 255, 255, 0.4) inset;
+    background: #9ea0a8;
+    background-image: linear-gradient(to right, #546aa5 0%, #D7DDE8  51%, #757F9A  100%);
+}
 
 
 /* Footer section */
@@ -319,12 +366,15 @@ nav a {
     .intro {
         top: 0px;
     }
-    .poem {
-
-    }
+    .poem h5 {
+        text-align: center;
+     }
     .portrait img {
         top: 0px;
         margin-bottom: 20px;
+    }
+    .project {
+        grid-template-columns: 1fr;
     }
     .contact {
         grid-template: 1fr 1fr 1fr/ 1fr;
